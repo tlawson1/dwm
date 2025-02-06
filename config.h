@@ -73,6 +73,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("/home/tom/.tools/switch_layout.sh") },
 	{ MODKEY,                       XK_q,      spawn,          SHCMD("pamixer -d 5") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("pamixer -i 5") },
+	{ MODKEY|ShiftMask,             XK_Escape, spawn,          SHCMD("sudo shutdown -P now") },
 	{ MODKEY,                       XK_a,      spawn,          {.v = prtscrcmd} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
