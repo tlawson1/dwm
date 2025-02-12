@@ -6,8 +6,6 @@ static const unsigned int gappx     = 20;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-/*static const char *fonts[]          = { "monospace:size=20" };
-static const char dmenufont[]       = "monospace:size=20";*/
 static const char *fonts[]          = { "UbuntuMono-B:size=25" };
 static const char dmenufont[]       = "UbuntuMono-B:size=25";
 static const char col_gray1[]       = "#222222";
@@ -111,10 +109,6 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-
-	/* Mappings so that it all the above mappings work when the phonetic russian keyboard is enabled */
-	{ MODKEY,                       0x6d3,      spawn,         SHCMD("/home/tom/.tools/switch_layout.sh") },
-
 };
 
 /* button definitions */
