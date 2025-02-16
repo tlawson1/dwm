@@ -74,6 +74,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_z,      spawn,          SHCMD("brightnessctl set 10%+") },
 	{ MODKEY,                       XK_x,      spawn,          SHCMD("brightnessctl set 10%-") },
 	{ MODKEY|ShiftMask,             XK_Escape, spawn,          SHCMD("sudo shutdown -P now") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("firefox") },
 	{ MODKEY,                       XK_a,      spawn,          {.v = prtscrcmd} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
